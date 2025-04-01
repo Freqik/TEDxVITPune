@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags and other head content -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Connected - TEDx VIT Pune</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <span class="tedx">TEDx</span>VIT Pune
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page5.html">Our Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page1.html">Connect with Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page3.html">Social Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page2.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page4.html">Committee</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+    <div class="committee-container">
+        <h2 class="heading"><b>Committee Members</b></h2><br>
+
+        <!-- Display the committee members in a grid layout -->
+        <div class="members-grid">
+            <div class="member" id="member1">
+                <div class="card-number">1</div>
+                <h3>John Doe</h3>
+                <p>Content and Editorial</p>
+            </div>
+            <div class="member" id="member2">
+                <div class="card-number">2</div>
+                <h3>Jane Smith</h3>
+                <p>Curators</p>
+            </div>
+            <div class="member" id="member3">
+                <div class="card-number">3</div>
+                <h3>Michael Brown</h3>
+                <p>Event Experience</p>
+            </div>
+            <div class="member" id="member4">
+                <div class="card-number">4</div>
+                <h3>Sarah White</h3>
+                <p>Event Managers</p>
+            </div>
+            <div class="member" id="member5">
+                <div class="card-number">5</div>
+                <h3>Emily Davis</h3>
+                <p>Finance</p>
+            </div>
+            <div class="member" id="member6">
+                <div class="card-number">6</div>
+                <h3>James Miller</h3>
+                <p>Marketing and Branding</p>
+            </div>
+            <div class="member" id="member7">
+                <div class="card-number">7</div>
+                <h3>Olivia Johnson</h3>
+                <p>Merchandise and Operations</p>
+            </div>
+            <div class="member" id="member8">
+                <div class="card-number">8</div>
+                <h3>David Wilson</h3>
+                <p>Multimedia and Design</p>
+            </div>
+            <div class="member" id="member9">
+                <div class="card-number">9</div>
+                <h3>Charlotte Lee</h3>
+                <p>Sponsorship</p>
+            </div>
+            <div class="member" id="member10">
+                <div class="card-number">10</div>
+                <h3>Daniel Taylor</h3>
+                <p>Video Production and Stage Management</p>
+            </div>
+            <div class="member" id="member11">
+                <div class="card-number">11</div>
+                <h3>Amy Martinez</h3>
+                <p>Website and Development</p>
+            </div>
+            <div class="member" id="member12">
+                <div class="card-number">12</div>
+                <h3>Johnathan King</h3>
+                <p>Creative Director</p>
+            </div>
+            <div class="member" id="member13">
+                <div class="card-number">13</div>
+                <h3>Lisa Adams</h3>
+                <p>Co-Organizer</p>
+            </div>
+            <div class="member" id="member14">
+                <div class="card-number">14</div>
+                <h3>Michael Harris</h3>
+                <p>Organizer</p>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Form to update committee members -->
+        <h3>Update Committee Members</h3>
+        <form class="update-form" id="updateForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter name" required><br>
+
+            <label for="role">Role:</label>
+            <input type="text" id="role" name="role" placeholder="Enter role" required><br>
+
+            <label for="member-id">Member ID (1-14):</label>
+            <input type="number" id="member-id" name="member-id" placeholder="Enter member number" required><br>
+
+            <button type="submit">Update Member</button>
+        </form>
+    </div><br><br><br>
+
+    <footer>
+        <p>&copy; 2024 TEDX VIT Pune. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // JavaScript to update member's name and role dynamically
+        document.getElementById("updateForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const role = document.getElementById("role").value;
+            const memberId = document.getElementById("member-id").value;
+
+            if (name && role && memberId >= 1 && memberId <= 14) {
+                // Update the corresponding member card with the new name and role
+                const memberCard = document.getElementById(`member${memberId}`);
+                memberCard.querySelector("h3").textContent = name;
+                memberCard.querySelector("p").textContent = role;
+            } else {
+                alert("Please enter valid details.");
+            }
+
+            // Clear the form fields
+            document.getElementById("updateForm").reset();
+        });
+    </script>
+</body>

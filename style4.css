@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c !important;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav.navbar {
+    padding: 12px 30px !important; /* Custom padding for consistency */
+    height: 90px !important; /* Explicitly set height to 50px */
+    background-color: rgb(19, 19, 19) !important;
+}
+
+nav .navbar-brand {
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: white;
+}
+
+nav .navbar-brand .tedx {
+    color: red;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+    color: white !important;
+    font-size: 1rem;
+    padding: 8px 18px; /* Adjust padding to match your design */
+    border-radius: 5px;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover {
+    background-color: red;
+    color: white;
+}
+
+.committee-container {
+    background-color: #1f1f1f;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    max-width: 1300px;
+    text-align: center;
+    margin-top: 150px !important; /* Increased to avoid navbar overlap */
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+    height: auto;
+    overflow: hidden;
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.member {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 30px; /* Fixed width */
+    height: 30px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member h3 {
+    color: #ff4d4d;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.member p {
+    color: white;
+    font-size: 1rem;
+}
+
+.update-form {
+    margin-top: 30px;
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.update-form label {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.update-form input {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #444;
+    color: white;
+}
+
+.update-form button {
+    padding: 12px 25px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.update-form button:hover {
+    background-color: #e60000;
+}
+
+.divider {
+    margin-top: 40px;
+    border: 0;
+    border-top: 2px solid #333;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 40px;
+}
+

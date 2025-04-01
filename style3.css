@@ -1,0 +1,158 @@
+/* General Page Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Custom Height */
+nav.navbar {
+    padding: 12px 30px !important; /* Custom padding for consistency */
+    height: 90px !important; /* Explicitly set height to 50px */
+    background-color: rgb(19, 19, 19) !important;
+}
+
+nav .navbar-brand {
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: white;
+}
+
+nav .navbar-brand .tedx {
+    color: red;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+    color: white !important;
+    font-size: 1rem;
+    padding: 8px 18px; /* Adjust padding to match your design */
+    border-radius: 5px;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Body and Layout Styles */
+body {
+    background-color: #1c1c1c;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -50px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px; /* Adjust padding for top to ensure content isn't hidden behind navbar */
+}
+
+main {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* First Section - Stay Connected */
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-top: 100px;
+    background-color: #212121;
+    box-shadow: 0px 10px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.left-section {
+    flex: 1;
+    padding: 30px;
+    color: white;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.left-section h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff4213;
+    margin-bottom: 30px;
+}
+
+.left-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.right-section img {
+    flex: 1;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-left: 30px;
+}
+
+/* Second Section - Social Media Cards */
+.second-section {
+    padding: 50px 0;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.social-card {
+    background-color: #212121;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0px 10px 20px rgb(225, 50, 50);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(255, 126, 95, 0.3);
+}
+
+.social-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.social-card h2 {
+    font-size: 1.5em;
+    color: #ff4213;
+    margin-top: 10px;
+}
+
+.social-card a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-card a:hover {
+    color: #ff4213;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    max-width: 100%;
+}

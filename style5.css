@@ -1,0 +1,94 @@
+/* General Page Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+nav.navbar {
+    padding: 10px 20px;
+    height: 90px !important;
+    background-color: rgb(19, 19, 19) !important; /* Dark background */
+}
+
+nav .navbar-brand {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: white;
+}
+
+nav .navbar-brand .tedx {
+    color: red;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 1rem;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Main Content Section */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c !important;
+    color: white;
+    padding-top: 80px; /* Adjusting for navbar height */
+}
+
+#what-we-do {
+    background-color: #272727;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: #ff4d4d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.sub-heading {
+    font-size: 1.8rem;
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: small;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+strong {
+    color: #ff9900;
+}
+
+/* Divider */
+hr {
+    border: 0;
+    border-top: 2px solid #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+}
